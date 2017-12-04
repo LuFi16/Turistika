@@ -1,15 +1,13 @@
 <!doctype html>
-<html class="no-js" lang="cs">
+<html lang="cs-cz">
     <head>
         <meta charset="utf-8">
         <title>Turklub</title>
-        <meta name="description" content=" Tato stránka obsahuje informace o turistickém klubu z Prahy - Turklub. ">
-        <meta name="keywords" content="">
+        <meta name="description" content="Tato stránka je studentský projekt. Obsahuje informace o smyšleném turistickém klubu z Prahy - Turklub.">
+        <meta name="keywords" content="Turklub; Turistika; Klub; Praha; Poznávací zájezdy">
         <meta name="author" content="Lucie Fiedlerová, Jan Pšenička">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="shortcut icon" href="images/icon.ico">
-
         <link rel="stylesheet" href="style.css" type="text/css" />
     </head>
     <body>
@@ -19,7 +17,10 @@
 
         <!-- Add your site or application content here -->
         <header>
-            <nav>
+           <div class="header-banner">
+            <a class="header-banner-text" href="index.html">TURKLUB</a>
+            </div>
+            <nav alt="menu">
                 <ul>
                     <li><a href="index.html" class="active">O nás</a></li>
                     <li><a href="historie.html">Historie</a></li>
@@ -28,10 +29,14 @@
                     <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </nav>
+            <section class="notice">
+                <p>UPOZORNĚNÍ: Tento web je studentským projektem a všechny zde uvedené informace jsou smyšlené.</p>
+            </section>
         </header>
         <main>
-        <article>
-                <h1 id="Onas">O Turklubu</h1>
+            <section alt="O nás" class="full_width">
+        <article alt="Informace o Turklubu">
+                <h1>O Turklubu</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Mauris ut augue ut eros efficitur malesuada a sit amet tellus.
@@ -55,7 +60,10 @@
                     Mauris in turpis est. Cras molestie gravida orci vitae tempus. Aliquam et velit ipsum. Suspendisse dapibus libero ac ex viverra condimentum. Nullam aliquet, ligula ornare ultrices pharetra, felis tellus tristique eros, sed luctus nulla urna ut tellus. Mauris nec arcu eu tortor mattis hendrerit sed sodales nibh. Vivamus dignissim et mauris nec feugiat. Nulla ac congue augue. Mauris sit amet mi quis eros dapibus consectetur. In sed turpis a mi volutpat pharetra in et justo. Pellentesque tellus lorem, viverra ac nunc eget, ultrices porttitor urna. Aliquam sapien mi, mollis nec odio vel, sollicitudin lacinia nunc. Quisque sed egestas odio. Suspendisse eu faucibus dui.
                 </p>
         </article>
+            </section>
         </main>
+
+
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
@@ -68,8 +76,13 @@
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+
         <footer>
-            Copyright &copy; 2017 Turistický klub - Turklub
+            <p>Copyright &copy; 2017 Turistický klub - Turklub</p>
+            <p>
+                Prohlašujeme, že tato stránka splňuje <a href="http://blindfriendly.cz/download/doc/vyhlaska-64_2008.pdf" alt="odkaz na vyhlášku č. 64/2008 Sb.">vyhlášku č. 64/2008 Sb.</a> o přístupnosti webových stránek pro osoby se zdravotním postižením.
+            </p>
         </footer>
     </body>
 </html>

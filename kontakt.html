@@ -1,13 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="cs-cz">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Turklub</title>
+    <meta name="description" content="Tato stránka je studentský projekt. Obsahuje informace o smyšleném turistickém klubu z Prahy - Turklub.">
+    <meta name="keywords" content="Turklub; Turistika; Klub; Praha; Poznávací zájezdy">
+    <meta name="author" content="Lucie Fiedlerová, Jan Pšenička">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/icon.ico">
     <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
 <header>
-    <nav>
+    <nav alt="menu">
         <ul>
             <li><a href="index.html">O nás</a></li>
             <li><a href="historie.html">Historie</a></li>
@@ -18,28 +23,38 @@
     </nav>
 </header>
 <main>
-    <article id="kontakt">
+    <section alt="Kontakty a mapa" class="kontakty full_width">
+        <article alt="Kontakty">
 
-            <h1>Kde nás najdete?</h1>
-            <p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2557.664431429288!2d14.371254315851079!3d50.130000979432396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470beaa5d02097fb%3A0xf29bd7cffb8fb4bc!2sCzech+University+of+Life+Sciences+Prague!5e0!3m2!1sen!2scz!4v1511618492143" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </p>
+            <h1>Kontakty</h1>
+            <table alt="seznam kontaktů">
+                <tr class="tr-main">
+                    <th>Adresa</th>
+                    <th>Telefon</th>
+                    <th>Mobil</th>
+                </tr>
+                <tr>
+                    <td>Kamýcká 129, Praha 6 - Suchdol, 165 00</td>
+                    <td>(+420) 123 456 789</td>
+                    <td>(+420) 987 654 321</td>
+                </tr>
+            </table>
 
-        <h3>Kontakty</h3>
-        <table>
-            <tr class="tr-main">
-                <th>Adresa</th>
-                <th>Telefon</th>
-                <th>Mobil</th>
-            </tr>
-            <tr>
-                <td>Kamýcká, Praha</td>
-                <td>(+420)123456789</td>
-                <td>(+420)987654321</td>
-            </tr>
-        </table>
-    </article>
+            <h2>Kde nás najdete?</h2>
+            <map alt="Mapa sídla Turklubu" id="map">
+                <iframe class="for_desktop" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2557.664431429288!2d14.371254315851079!3d50.130000979432396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470beaa5d02097fb%3A0xf29bd7cffb8fb4bc!2sCzech+University+of+Life+Sciences+Prague!5e0!3m2!1sen!2scz!4v1511618492143"
+                        allowfullscreen alt="zobrazení mapy sídla Turklubu pomocí Google Maps"></iframe>
+                <a class="for_mobile for_tablet" href="https://www.google.cz/maps/place/%C4%8Cesk%C3%A1+zem%C4%9Bd%C4%9Blsk%C3%A1+univerzita+v+Praze/@50.130001,14.371249,17z/data=!3m1!4b1!4m5!3m4!1s0x470beaa5d02097fb:0xf29bd7cffb8fb4bc!8m2!3d50.130001!4d14.373443"
+                   alt="odkaz na Google maps">
+                    Klikněte na tento odkaz pro přesměrování na Google maps s naší adresou
+                </a>
+            </map>
+        </article>
+    </section>
 </main>
-<footer>Copyright &copy; 2017 Turistický klub - Turklub</footer>
+<footer>
+    Copyright &copy; 2017 Turistický klub - Turklub</br></br>
+    Prohlašujeme, že tato stránka splňuje <a href="http://blindfriendly.cz/download/doc/vyhlaska-64_2008.pdf" alt="odkaz na vyhlášku č. 64/2008 Sb.">vyhlášku č. 64/2008 Sb.</a> o přístupnosti webových stránek pro osoby se zdravotním postižením.
+</footer>
 </body>
 </html>

@@ -6,7 +6,7 @@ body{
 
 h1{
   font-size: 2em;
-  text-shadow: 2px 2px 1px #3d3d3d;
+  text-shadow: 1px 1px 1px #3d3d3d;
 }
 
 main{
@@ -41,9 +41,16 @@ body > header{
 
 nav a:hover,
 nav a:active,
-nav a:focus  {
+nav a:focus {
   background-color: #426115;
 }
+
+.notice {
+  color: grey;
+  text-align: center;
+  padding: 0 0.5rem 0.1rem 0.5rem;
+}
+
 
 table{
   border: 2px solid black;
@@ -51,7 +58,7 @@ table{
 .align-left{
   text-align: left;
 }
-  th, td{                         //header, cell
+  th, td{
     text-align: center;
     border: 1px solid black;
     padding: 1rem;
@@ -67,6 +74,19 @@ table{
   }
 }
 
+.header-banner{
+  background: url("images/croatia.jpg") center center no-repeat;
+  text-align: center;
+  padding: 4rem;
+}
+.header-banner-text{
+  text-decoration: none;
+  color: black;
+  font-size: 7rem;
+  background: green;
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: ;//////////////////////////////////
+}
 
 /* ARTICLES */
 
@@ -76,51 +96,123 @@ article{
   margin: 0.5rem;
 }
 
+.kontakty{
+  width: 100%;
+  text-align: center;
+  table{
+    margin: auto;
+  }
+}
+
 .align-center{
   text-align: center;
 }
-
-.introduction{
-
+.table_align_center{
+  margin: auto;
 }
+
+
+
+.full_width{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 footer{
   background: url('images/header.png') #111411;
-  color: white;                       // JAK D8M MENU ÚPLNĚ DOLŮ?
-  /* position: fixed;
- left: 0;
- bottom: 0;  */
-  width: 100%;
-  padding: 2rem;
+  color: white;
+  //width: 100%;
+  padding: 2rem 2rem 2rem 2rem;
   margin: 1rem 0 0 0;
 }
 
 
 
-
-
-
-/*   MOBILE   */
+/* *******************  MOBILE  ***************** */
 @media (max-width: 599px){
-
+article{
+font-size: 0.9em;
 }
 
-
-/*   TABLET   */
-@media (min-width: 600px) and (max-width: 800px){
-  body{
-    background: olivedrab;                       //FOR TESTING
+.for_desktop{
+  display: none;
+}
+.for_mobile{
+  display: inline;
+}
+.for_tablet{
+  display: none;
+}
+  #sunset{
+    width: 350px;
+    height: 120px;
+  }
+  footer{
+    text-align: center;
   }
 }
 
-/*   COMPUTER   */
+/* ********************  TABLET  ********************** */
+@media (min-width: 600px) and (max-width: 800px){
+/*  body{
+    background: olivedrab;                       //FOR TESTING
+  }*/
+
+body > header{
+  nav{
+    ul{
+      display: flex;
+      li{
+        margin: auto;
+        a{
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
+.for_desktop{
+  display: none;
+}
+.for_mobile{
+  display: none;
+}
+.for_tablet{
+  display: inline;
+}
+  #sunset{
+    width: 450px;
+    height: 154px;
+  }
+}
+
+/* *****************  COMPUTER  ***************** */
 
 @media (min-width: 801px){
-  body{
+/*  body{
     background: olive;                       //FOR TESTING
+  }*/
+  .for_desktop{
+    display: inline;
+    width: 48rem;
+    height: 35rem;
+    border: none;
   }
-
+  .for_mobile{
+    display: none;
+  }
+  .for_tablet{
+    display: none;
+  }
 
   body > header{
     nav{
@@ -134,7 +226,17 @@ footer{
         }
       }
     }
-    background: url('images/header.png') #111411;
   }
-
+ /* #road{           //Original size
+    width: 450px;
+    height: 300px;
+  }
+    #balloon{
+  width: 449px;
+  height: 300px;
+}
+  #sunset{
+  width: 350px;
+  height: 120px;
+}*/
 }
