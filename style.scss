@@ -1,0 +1,140 @@
+body{
+  background: url('images/background.png') #0a5407;
+  margin: 0;
+  height: 100%;
+}
+
+h1{
+  font-size: 2em;
+  text-shadow: 2px 2px 1px #3d3d3d;
+}
+
+main{
+  display: flex;
+}
+
+/* HEADER */
+
+body > header{
+  nav{
+    display: inline-block;
+    width: 100%;
+    ul{
+      list-style-type: none;
+      padding-left: 0;
+      li{
+        text-align: center;
+        a{
+          background: none;
+          color: white;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 1rem;
+          display: block;
+        }
+      }
+    }
+  }
+  background: url('images/header.png') #111411;
+}
+
+
+nav a:hover,
+nav a:active,
+nav a:focus  {
+  background-color: #426115;
+}
+
+table{
+  border: 2px solid black;
+ border-collapse: collapse;
+.align-left{
+  text-align: left;
+}
+  th, td{                         //header, cell
+    text-align: center;
+    border: 1px solid black;
+    padding: 1rem;
+  }
+  th{
+    background: #deffad;
+  }
+  .tr-main{
+    border: 2px solid black;
+  }
+  .th-main{
+    border-right: 2px solid black;
+  }
+}
+
+
+/* ARTICLES */
+
+article{
+  background: white;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0.5rem;
+}
+
+.align-center{
+  text-align: center;
+}
+
+.introduction{
+
+}
+
+/* FOOTER */
+footer{
+  background: url('images/header.png') #111411;
+  color: white;                       // JAK D8M MENU ÚPLNĚ DOLŮ?
+  /* position: fixed;
+ left: 0;
+ bottom: 0;  */
+  width: 100%;
+  padding: 2rem;
+  margin: 1rem 0 0 0;
+}
+
+
+
+
+
+
+/*   MOBILE   */
+@media (max-width: 599px){
+
+}
+
+
+/*   TABLET   */
+@media (min-width: 600px) and (max-width: 800px){
+  body{
+    background: olivedrab;                       //FOR TESTING
+  }
+}
+
+/*   COMPUTER   */
+
+@media (min-width: 801px){
+  body{
+    background: olive;                       //FOR TESTING
+  }
+
+
+  body > header{
+    nav{
+      ul{
+        display: flex;
+        li{
+          margin: auto;
+          a{
+            padding: 2rem;
+          }
+        }
+      }
+    }
+    background: url('images/header.png') #111411;
+  }
+
+}
