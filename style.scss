@@ -3,19 +3,24 @@ body{
   margin: 0;
   height: 100%;
 }
-
-h1{
-  font-size: 2em;
-  text-shadow: 1px 1px 1px #3d3d3d;
+.align-center{
+  text-align: center;
 }
-
+.align-left{
+  text-align: left;
+}
+.table_align_center{
+  margin: auto;
+}
+.full_width{
+  width: 100%;
+}
 main{
   display: flex;
 }
 
-/* HEADER */
-
-body > header{
+/*** HEADER ***/
+body > header{       //menu
   nav{
     display: inline-block;
     width: 100%;
@@ -37,27 +42,36 @@ body > header{
   }
   background: url('images/header.png') #111411;
 }
-
-
 nav a:hover,
 nav a:active,
 nav a:focus {
   background-color: #426115;
 }
-
 .notice {
   color: grey;
   text-align: center;
   padding: 0 0.5rem 0.1rem 0.5rem;
 }
+.header-banner{
+  text-align: center;
+  background: url("images/croatia.jpg") center center no-repeat;
+  background-size: 100%;
+  padding: 8rem;
+}
+.header-banner-text{
+  text-decoration: none;
+  color: white;
+  text-shadow: 10px 3px 10px black;
+  font-size: 2rem;
+  background: rgba(4, 38, 17, 0.7);
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 2rem;
+}
 
-
+/*** TABLES ***/
 table{
   border: 2px solid black;
- border-collapse: collapse;
-.align-left{
-  text-align: left;
-}
+  border-collapse: collapse;
   th, td{
     text-align: center;
     border: 1px solid black;
@@ -74,28 +88,19 @@ table{
   }
 }
 
-.header-banner{
-  background: url("images/croatia.jpg") center center no-repeat;
-  text-align: center;
-  padding: 4rem;
+/*** ARTICLES ***/
+h2{
+  font-size: 2em;
+  text-shadow: 1px 1px 1px #3d3d3d;
 }
-.header-banner-text{
-  text-decoration: none;
-  color: black;
-  font-size: 7rem;
-  background: green;
-  padding: 1rem 3rem 1rem 3rem;
-  border-radius: ;//////////////////////////////////
+h3{
+  font-size: 1.7em;
 }
-
-/* ARTICLES */
-
 article{
   background: white;
   padding: 0.5rem 1rem 0.5rem 1rem;
   margin: 0.5rem;
 }
-
 .kontakty{
   width: 100%;
   text-align: center;
@@ -104,37 +109,13 @@ article{
   }
 }
 
-.align-center{
-  text-align: center;
-}
-.table_align_center{
-  margin: auto;
-}
-
-
-
-.full_width{
-  width: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-/* FOOTER */
+/*** FOOTER ***/
 footer{
   background: url('images/header.png') #111411;
   color: white;
-  //width: 100%;
   padding: 2rem 2rem 2rem 2rem;
   margin: 1rem 0 0 0;
 }
-
 
 
 /* *******************  MOBILE  ***************** */
@@ -143,15 +124,15 @@ article{
 font-size: 0.9em;
 }
 
-.for_desktop{
+  .for_desktop{
   display: none;
-}
-.for_mobile{
+  }
+  .for_mobile{
   display: inline;
-}
-.for_tablet{
+  }
+  .for_tablet{
   display: none;
-}
+  }
   #sunset{
     width: 350px;
     height: 120px;
@@ -159,14 +140,14 @@ font-size: 0.9em;
   footer{
     text-align: center;
   }
+  .header-banner {
+    background-size: 100%;
+    padding: 4rem;
+  }
 }
 
 /* ********************  TABLET  ********************** */
 @media (min-width: 600px) and (max-width: 800px){
-/*  body{
-    background: olivedrab;                       //FOR TESTING
-  }*/
-
 body > header{
   nav{
     ul{
@@ -193,14 +174,14 @@ body > header{
     width: 450px;
     height: 154px;
   }
+  .header-banner-text{
+    font-size: 5rem;
+  }
 }
 
 /* *****************  COMPUTER  ***************** */
 
 @media (min-width: 801px){
-/*  body{
-    background: olive;                       //FOR TESTING
-  }*/
   .for_desktop{
     display: inline;
     width: 48rem;
@@ -227,7 +208,10 @@ body > header{
       }
     }
   }
- /* #road{           //Original size
+  .header-banner-text{
+    font-size: 5rem;
+  }
+ /* #road{           //Original pictures sizes
     width: 450px;
     height: 300px;
   }
