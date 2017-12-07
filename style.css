@@ -51,7 +51,7 @@ nav a:focus {
   text-align: center;
   background: url("images/croatia.jpg") center center no-repeat;
   background-size: 100%;
-  padding: 8rem; }
+  margin: 0; }
 
 .header-banner-text {
   text-decoration: none;
@@ -60,7 +60,8 @@ nav a:focus {
   font-size: 2rem;
   background: rgba(4, 38, 17, 0.7);
   padding: 1rem 3rem 1rem 3rem;
-  border-radius: 2rem; }
+  border-radius: 2rem;
+  margin: 0; }
 
 /*** TABLES ***/
 table {
@@ -126,7 +127,7 @@ footer {
 
   .header-banner {
     background-size: 100%;
-    padding: 4rem; } }
+    padding: 2rem; } }
 /* ********************  TABLET  ********************** */
 @media (min-width: 600px) and (max-width: 800px) {
   body > header nav ul {
@@ -150,7 +151,10 @@ footer {
     height: 154px; }
 
   .header-banner-text {
-    font-size: 5rem; } }
+    font-size: 5rem; }
+
+  .header-banner {
+    padding: 3rem; } }
 /* *****************  COMPUTER  ***************** */
 @media (min-width: 801px) {
   .for_desktop {
@@ -174,6 +178,9 @@ footer {
 
   .header-banner-text {
     font-size: 5rem; }
+
+  .header-banner {
+    padding: 6rem; }
 
  /* #road{           //Original pictures sizes
     width: 450px;
